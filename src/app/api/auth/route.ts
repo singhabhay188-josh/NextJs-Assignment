@@ -38,7 +38,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const token = jwt.sign({ "user": pat }, JWT_SECRET, { expiresIn: "1h" });
+    const token = jwt.sign({ user: pat }, JWT_SECRET, { expiresIn: "1h" });
 
     const cookieStore = await cookies();
 

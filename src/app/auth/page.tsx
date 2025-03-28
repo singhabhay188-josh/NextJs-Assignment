@@ -13,8 +13,6 @@ interface FormInput {
   error: null | string;
 }
 
-
-
 export default function auth() {
   const router = useRouter();
   const [username, setUsername] = useState<FormInput>({
